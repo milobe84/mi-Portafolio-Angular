@@ -1,0 +1,73 @@
+.titulo {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1.2
+}
+
+h3{
+    font-size: 50px;
+    color: rgb(20, 163, 211);
+    text-shadow: 5px 5px 2px lightblue;
+    
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+    /* max-width: 30em; */
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr 0.9fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . ."
+        ". titulo-proyecto . imagen-proyecto ."
+        ". . . imagen-proyecto ."
+        ". descripcion-proyecto . imagen-proyecto ."
+        ". . . . .";
+}
+
+.titulo-proyecto {
+    font-family: var(--terciary-font);
+    justify-self: center;
+    margin-top: 80px;
+    grid-area: titulo-proyecto;
+}
+
+
+.imagen-proyecto {
+    grid-area: imagen-proyecto;
+    margin-left: 60px;
+}
+
+img{
+    width: 800px;
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 10px 3px rgba(151,152,166,1);
+}
+
+
+
+.descripcion-proyecto {
+    font-family: var(--secondary-font);
+    font-weight: 200;
+    justify-self: stretch;
+    grid-area: descripcion-proyecto;
+    line-height: 35px;
+}

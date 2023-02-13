@@ -1,0 +1,25 @@
+<div class="contenedor">
+  <form>
+    <p *ngIf="loginError" class="error-message"><strong>usuario o contraseña incorrecto</strong></p>
+    <div class="con">
+      <header class="head-form">
+        <h2>Log In</h2>
+        <p>Ingrese usando su usuario y contraseña</p>
+      </header>
+      <br>
+      <div class="field-set">
+        <span class="input-item">
+          <i class="fa fa-user-circle"></i>
+        </span>
+        <input class="form-input" type="text" name="username" placeholder="Usuario" [(ngModel)]="username">
+        <br>
+        <span class="input-item">
+          <i class="fa fa-key"></i>
+        </span>
+        <input class="form-input" type="password" name="password" placeholder="Contraseña" [(ngModel)]="password">
+        <br>
+        <button class="log-in" (click)="login()">Log In</button>
+      </div>
+    </div>
+  </form>
+</div>

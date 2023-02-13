@@ -1,0 +1,32 @@
+<header>
+  
+    <a href="/"><i class="fa-solid fa-code m-2"></i>Miryan Lopez</a>
+    <nav>
+      <div class="iconos-nav">
+        <ul>
+          <li><a routerLink="/home"><i class="fa-solid fa-house m-2"></i>Home</a></li>
+          <li><a routerLink="/portafolio"><i class="fa-solid fa-newspaper m-2"></i>Portafolio</a></li>
+          <li><a routerLink="/contact"><i class="fa-solid fa-address-book m-2"></i>Contact</a></li>
+          <ng-container *ngIf="isUserLoggedIn">
+            <li><a routerLink="/profile"><i class="fa-regular fa-address-card m-2"></i>Profile</a></li>
+            <li><a routerLink="" (click)="logout()"><i class="fa-solid fa-right-from-bracket m-2"></i>Log out</a></li>
+          </ng-container>
+          <li *ngIf="!isUserLoggedIn"><a routerLink="/login"><i class="fa-solid fa-right-to-bracket m-2"></i>Log in</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <div class="texto-footer">&copy; Miryan Lopez / 2023</div>
+  <div class="iconos-footer">
+    <div><i class="fa-brands fa-square-twitter"></i></div>
+    <div><i class="fa-regular fa-envelope"></i></div>
+    <div><i class="fa-brands fa-linkedin"></i></div>
+    <div><i class="fa-brands fa-instagram"></i></div>
+</div>
+</footer>

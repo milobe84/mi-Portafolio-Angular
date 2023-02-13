@@ -1,0 +1,59 @@
+.titulo{
+    text-align: center;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1.2
+}
+
+p{
+    margin-top: 0.4em;
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 30em;
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 400px;
+}
+
+.info-tarjeta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.descripcion-D{
+    font-size: 20px;
+    padding: 0 30px 0 30px;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: 650px;
+    flex-direction: row;
+}
+
+.tarjeta1{
+    width: 400px;
+    height: 550px;
+    margin: 40px 80px 40px 80px;
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0px 0px 10px 3px rgba(151,152,166,1);
+}
